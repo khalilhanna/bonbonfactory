@@ -58,8 +58,7 @@ body {
 
 .max-height {
   min-height: calc(100vh - 76px);
-  background: linear-gradient(var(--grayTrans), var(--grayTrans)),
-    url("../img/headerBcg.jpeg") center/cover fixed no-repeat;
+  background: url("../img/headerBcg.jpeg") center/cover fixed no-repeat;
   position: relative;
 }
 .banner {
