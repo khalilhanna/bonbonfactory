@@ -6,7 +6,7 @@
   --mainWhite: #fff;
   --mainBlack: #000;
   --yellowTrans: rgba(249, 228, 148, 0.5);
-  --grayTrans: rgba(196, 192, 192, 0.2);
+  --grayTrans: rgba(196, 192, 192, 0);
   --mainGrey: rgb(238, 238, 238);
 }
 
