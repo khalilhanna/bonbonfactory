@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!-- bootstrap css -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- main css -->
+        <link rel="stylesheet" href="css/cart.css">
+        <!-- font awesome -->
+        <link rel="stylesheet" href="css/all.css">
+        <title>Bonbon Factory</title>
+        <style>
+      </style>
+    </head>
+    <body>
+        <!-- header -->
+        <header>
+            <!-- navbar  -->
+            <nav class="navbar navbar-expand-lg px-4">
+                <a class="navbar-brand" href="#"><img src="img/bonbon_logo.jpg"
+                        width="80px" height="60px" alt=""></a>
+                <button class="navbar-toggler" type="button"
+                    data-toggle="collapse"
+                    data-target="#myNav">
+                    <span class="toggler-icon"><i class="fas fa-bars"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="myNav">
+                    <ul class="navbar-nav mx-auto text-capitalize">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#about">about</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#store">store</a>
+                        </li>
+                    </ul>
+                    <div class="nav-info-items d-none d-lg-flex">
+                        <!-- single info -->
+                        <div class="nav-info align-items-center d-flex
+                            justify-content-between mx-lg-5">
+                            <span class="info-icon mx-lg-3"><i class="fas
+                                    fa-phone"></i></span>
+                            <p class="mb-0">+ 123 456 789</p>
+                        </div>
+                        <!-- end of single info -->
+                        <!-- single info -->
+                        <a id="cart-info" href="cart.html" class="text-uppercase
+                            filter-btn
+                            nav-info
+                            align-items-center cart-info
+                            d-flex justify-content-between mx-lg-5">
+                            <span class="cart-info__icon mr-lg-3"><i class="fas
+                                    fa-shopping-cart"></i></span>
+                            <p class="mb-0 text-capitalize"><span
+                                    id="item-count-1"></span>
+                                <span id="itemTotal" class="item-total"></span></p>
+                        </a>
+                        <!-- </div> -->
+                        <!-- end of single info -->
+                    </div>
+                </div>
+            </nav>
+            <!-- end of nav -->
+            <div id="cardContainer" class="container mt-5 mb-5">
+
+                <div class="card">
+                    <div class="row">
+                        <div class="col-md-8 cart">
+                            <div class="title">
+                                <div class="row">
+                                    <div class="col">
+                                        <h4><b>Shopping Cart</b></h4>
+                                    </div>
+                                    <div id="itemCounts" class="col
+                                        align-self-center
+                                        text-right
+                                        text-muted">items</div>
+                                </div>
+                            </div>
+                            <div id="cartItemsContainer">
+                                <!-- All Items -->
+                            </div>
+
+                            <div class="back-to-shop"><a href="index.html">&leftarrow;</a><span
+                                    class="text-muted">Back to shop</span></div>
+                        </div>
+                        <div class="col-md-4 summary">
+                            <div>
+                                <h5><b>Summary</b></h5>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div id="itemNo" class="col"
+                                    style="padding-left:0;">ITEMS</div>
+                                <div id="totalSummary" class="col text-right"></div>
+                            </div>
+                            <form>
+                                <p>SHIPPING</p> <select id="shipping">
+                                    <option class="text-muted" value="0">Pick Up
+                                        -
+                                        $ 0</option>
+                                    <option class="text-muted" value="5">Standard
+                                        Delivery -
+                                        $ 5.00</option>
+                                </select>
+                                <p>GIVE CODE</p> <input id="code"
+                                    placeholder="Enter your code" />
+                            </form>
+                            <div class="row" style="border-top: 1px solid
+                                rgba(0,0,0,.1); padding: 2vh 0;">
+                                <div class="col">TOTAL PRICE</div>
+                                <div id="total" class="col text-right">$ 137.00</div>
+                            </div> <button class="btn">CHECKOUT</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- jquery -->
+            <script src="js/jquery-3.3.1.min.js"></script>
+            <!-- bootstrap js -->
+            <script src="js/bootstrap.bundle.min.js"></script>
+            <!-- cart js -->
+            <script src="js/cart.js"></script>
+        </body>
+    </html>
